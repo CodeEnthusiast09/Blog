@@ -1,0 +1,431 @@
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+h1 {
+  font-family: "Lora";
+  font-weight: 400;
+  color: #143774;
+  margin: 0;
+}
+.subtitle {
+  text-align: center;
+  font-family: "Ubuntu";
+  font-weight: 700;
+  color: #1792d2;
+  font-size: 0.75rem;
+  margin: 0;
+}
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+}
+header {
+  background: #f8f8f8;
+  padding: 2em 0;
+}
+
+/* NAVIGATION */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+nav li {
+  margin-left: 2em;
+}
+nav a {
+  text-decoration: none;
+  color: #707070;
+  font-weight: 700;
+  padding: 0.25em 0;
+}
+nav a:hover,
+nav a:focus {
+  color: #1792d2;
+}
+.current-page {
+  border-bottom: 1px solid #707070;
+}
+.current-page:hover {
+  color: #707070;
+}
+
+/* HOME PAGE */
+
+main {
+  margin: 3rem auto 2rem;
+  padding: 0 1rem;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.col-1 h1,
+.recents h1 {
+  font-size: 24px;
+}
+p {
+  font-size: 18px;
+  color: #707070;
+}
+.date {
+  font-size: 11px;
+}
+main h1 {
+  font-size: 20px;
+}
+
+/* COL-1 */
+
+.col-1 {
+  border-bottom: 1px solid #707070;
+}
+.col-1-link {
+  text-decoration: underline;
+  font-size: 16px;
+  color: #1792d2;
+  display: inline;
+}
+
+/* COL-2, COL-3, COL-4 */
+
+.col-2,
+.col-3,
+.col-4 {
+  margin-top: 1.5rem;
+}
+.col-2 h1,
+.col-3 h1,
+.col-4 h1 {
+  font-size: 24px;
+  margin-top: 1rem;
+}
+
+main a {
+  text-decoration: none;
+  color: #1792d2;
+  font-size: 10px;
+  font-weight: 700;
+  display: block;
+  margin: 1rem 0;
+}
+main a:hover {
+  color: #143774;
+  text-decoration: underline;
+}
+
+/* COL-5 */
+
+.col-5 {
+  border: 0.75em solid #ebebeb;
+  margin-bottom: 2.5rem;
+}
+.col-5 figure {
+  margin: 2.5em 1em 1em;
+}
+.col-5 figcaption {
+  font-size: 12px;
+}
+
+/* COL-6 */
+
+#recent {
+  color: #143774;
+  margin-left: 1em;
+}
+.col-6 {
+  border: 0.75em solid #ebebeb;
+}
+.col-6 figure {
+  margin: 1em;
+}
+figcaption {
+  margin-top: 1rem;
+  font-size: 16px;
+  color: #143774;
+}
+.col-6 .cap {
+  font-size: 16px;
+  color: #143774;
+  border-bottom: 3px solid #ebebeb;
+  padding-bottom: 1rem;
+}
+.about-me,
+.food,
+.work,
+.deco {
+  width: 100%;
+  height: 87px;
+  object-fit: cover;
+}
+.work {
+  object-position: bottom;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #143774;
+  border: 1rem solid #143774;
+  text-align: center;
+}
+footer p {
+  color: #ffffff;
+}
+footer .fab {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 600px) {
+  header .fas {
+    display: none;
+  }
+  main {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+  }
+  .column-1 {
+    width: 80%;
+    margin-right: 1.5rem;
+  }
+  .column-2 {
+    width: 20%;
+    min-width: 150px;
+    margin-left: 1.5rem;
+  }
+  .posts {
+    width: 80%;
+    margin-right: 1.5rem;
+  }
+  .col-5 figure::before {
+    content: "ABOUT ME";
+    color: #143774;
+    font-weight: 700;
+  }
+  .col-5 img {
+    margin-top: 1em;
+  }
+  .col-5 figcaption {
+    font-size: 14px;
+    margin: 1.5em 0;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: row;
+  }
+  .col-2 .des {
+    width: 100%;
+  }
+  .col-2 .img-box {
+    width: 40%;
+  }
+  .col-2 img {
+    max-width: 100%;
+    min-height: 225px;
+    object-fit: cover;
+  }
+  .col-2 .des {
+    padding-left: 1.75rem;
+  }
+  .col-2 .des h1 {
+    margin-top: -0.2em;
+    padding-left: 0;
+  }
+  .col-2 .des p {
+    margin: 0;
+    padding: 10px 0 0;
+    text-align: left;
+  }
+  .col-3 {
+    display: flex;
+    flex-direction: row;
+  }
+  .col-3 .des {
+    width: 100%;
+  }
+  .col-3 .img-box {
+    width: 40%;
+  }
+  .col-3 img {
+    max-width: 100%;
+    min-height: 225px;
+    object-fit: cover;
+  }
+  .col-3 .des {
+    padding-left: 1.75rem;
+  }
+  .col-3 .des h1 {
+    margin-top: -0.2em;
+    padding-left: 0;
+  }
+  .col-3 .des p {
+    margin: 0;
+    padding: 10px 0 0;
+    text-align: left;
+  }
+  .col-4 {
+    display: flex;
+    flex-direction: row;
+  }
+  .col-4 .des {
+    width: 100%;
+  }
+  .col-4 .img-box {
+    width: 40%;
+  }
+  .col-4 img {
+    width: 100%;
+    min-height: 225px;
+    object-fit: cover;
+    object-position: left;
+  }
+  .col-4 .des {
+    padding-left: 1.75rem;
+  }
+  .col-4 .des h1 {
+    margin-top: -0.2em;
+    padding-left: 0;
+  }
+  .col-4 .des p {
+    margin: 0;
+    padding: 10px 0 0;
+    text-align: left;
+  }
+  .recent {
+    display: flex;
+    flex-direction: row;
+  }
+  .recent .des {
+    width: 100%;
+  }
+  .recent .img-box {
+    width: 40%;
+  }
+  .recent img {
+    max-width: 100%;
+    min-height: 225px;
+    object-fit: cover;
+  }
+  .recent .des {
+    padding-left: 1.75rem;
+  }
+  .recent .des h1 {
+    margin-top: -0.2em;
+    padding-left: 0;
+  }
+  .recent .des p {
+    margin: 0;
+    padding: 10px 0 0;
+    text-align: left;
+  }
+}
+
+/* ABOUT PAGE */
+
+#about-me {
+  margin-bottom: 3rem;
+}
+h2 {
+  font-family: "Lora";
+  font-size: 24px;
+  color: #143774;
+}
+h3 {
+  font-family: "Lora";
+  font-size: 21px;
+  color: #1792d2;
+}
+.about-me2 {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* RECENT POSTS PAGE */
+
+.recent {
+  border-bottom: 1px solid #707070;
+}
+.recent h1 {
+  font-size: 24px;
+}
+.recent .date {
+  font-size: 11px;
+}
+
+@media (max-width: 600px) {
+  .container-nav {
+    display: block;
+    margin: 0 25px 0;
+  }
+  .head-title {
+    text-align: left;
+    font-size: 0.7rem;
+  }
+  .subtitle {
+    text-align: left;
+  }
+
+  header .fas {
+    font-size: 1.5rem;
+    color: #143774;
+    margin-top: 3px;
+    margin-right: 20px;
+    position: absolute;
+    right: 0;
+    top: 4.7%;
+  }
+  .nav-bar .fas {
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px 15px 0 0;
+  }
+  .nav-bar {
+    width: 40%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    height: 100vh;
+    text-align: left;
+    background-color: #143774;
+    z-index: 999;
+    transition: left 0.5s ease;
+    /* display: none; */
+  }
+  .nav-bar li {
+    margin: 30px 0 0 10px;
+  }
+  .nav-bar li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    margin: 0.5em 0;
+  }
+  .current-page {
+    border-bottom: 1px solid #ffffff;
+  }
+  .navShown {
+    left: 60%;
+  }
+  .bodyUnscroll {
+    overflow: hidden;
+  }
+}
